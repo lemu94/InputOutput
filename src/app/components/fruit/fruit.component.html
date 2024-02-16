@@ -1,0 +1,7 @@
+<li
+  (click)="DeleteFruit()"
+  ng-repeat="notebook in notebooks | filter:query | orderBy: orderList"
+>
+  Nom : {{ Fruit.nom }}<br />
+  Categorie : {{ Fruit.categorie }}<br />
+</li>

@@ -1,0 +1,9 @@
+<ul id="notebook_ul">
+  @for (item of Fruits; track $index) {
+
+  <app-fruit [Fruit]="item" (DeleteF)="deletefruit($event)"></app-fruit>
+
+  }@empty {
+  <div [align]="'center'">Aucun Fruit</div>
+  }
+</ul>
